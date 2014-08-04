@@ -13,6 +13,8 @@
     adb push "$tmpdb" /sdcard/ &&
     adb shell "run-as '$pkg' cp '/sdcard/$tmpdb' '$db'"
 
+Note: see "[package is unknown](http://visualgdb.com/KB/?ProblemID=nopkg)" bug.
+
 ### Backup and Restore Database (Root)
     pkg=com.foo.bar
     db="/data/data/$pkg/databases/baz.db"
